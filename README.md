@@ -66,10 +66,56 @@ Package.json files
 
 Node Modules
   Reading from Files 
-• Creating demo.js file and enabling access to Node's file system using 'fs' module.
-• Generating a temporary JSON file, data.json, with a property named 'name' enclosed in double quotes.
-• Using'readFile' function to access the file system, passing in the location of the data JSON file as the first parameter.
-• Shifting the callback to the third parameter and adding 'UTF-8' as a string in the second parameter to read the JSON.
-• Accessing the JSON file using'require' directly, creating a 'data' variable and setting it to'require' with the path to data.json.
-• Observing two distinct objects in the console - one from'require' and another from'readFile'.
-• Addressing the disparities by creating a new variable, 'data,' and setting it to 'JSON.parse(data)' to convert the string to JSON.
+• The Node.js file system module allows you to work with the file system on your computer.
+• To include the File System module, use the require() method.
+• The fs.readFile() method is used to read files on your computer.
+
+Directory Access
+• Initiating a new demonstration file using 'fs' module and'readdir' function.
+• Initial parameter for'readdir' specifies directory location to read.
+• Establishing callback with error and data parameters.
+• Logging data using console.
+• Saving changes, executing demo with nodemon.
+• Output shows all directories within Drive C.
+• Demo exemplifies the straightforward process of reading directories.
+
+Writing to Files
+• This method replaces the specified file and content if it exists.
+• If the file does not exist, a new file, containing the specified content, will be created.
+File Writing in JavaScript
+
+• Creates a new file named demo.js, incorporating the file system module.
+• Uses the writeFile function with the file name as the first parameter and the data as the second.
+• Corrects a discrepancy in file content by converting the object to a string using JSON.stringify.
+• Removes a deprecation warning by creating a callback function that logs errors and a 'write finished' message to the console.
+• Updated script eliminates the deprecation warning and provides feedback upon completion.
+
+Node Frameworks
+  Understanding Frameworks
+    • Frameworks serve as a foundational structure in software development.
+    • They are crucial for web development, especially for creating large APIs or HTTP servers.
+    
+  Web APIs
+    • Web APIs act as services enabling data retrieval and storage.
+    • They are used to manage user creation, retrieval, and related functionalities.
+    
+  Popular Node.js Frameworks
+    • Express: Traditional and tested, known for its simplicity.
+    • Sails: Features-rich, includes an Object Relational Mapper (ORM).
+    • Koa: Modern, offers innovative features.
+    
+  Future Discussions
+    • Further exploration of Express, Sails, and Koa.
+    
+Express
+• Express.js is a web framework designed for Node, supporting both web applications and web APIs.
+• Web applications are functionalities on both the front and back end, distributed across the entire application.
+• Express.js, operating within Node, specifically addresses the back end, facilitating communication with it.
+• Despite its back-end nature, Express.js significantly contributes to the overall app.
+• Express.js has extensive community support and online documentation due to its longstanding presence in the development community.
+
+Socket.io
+• Addresses Express's limitation of client-server communication.
+• Enables bidirectional communication, allowing server to push notifications and data to client.
+• Composed of client-side library for browsers and server-side library for Node.js.
+• Both APIs feature event-driven functionality.
